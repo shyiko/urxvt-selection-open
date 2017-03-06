@@ -26,7 +26,7 @@ Usage (example):
     ! open selected file in vscode
     URxvt.keysym.A-e: perl:selection-open:bash -c 'vscode -g ${@/#\~/$HOME}' --
     ! open selected directory in thunar
-    URxvt.keysym.A-o: perl:selection-open:thunar
+    URxvt.keysym.A-o: perl:selection-open:bash -c 'thunar ${@/#\~/$HOME}' --
 
 =cut
 
